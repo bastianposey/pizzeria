@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+# from pizza_place.forms import TopicForm, EntryForm
+
+# from .models import Topic, Entry
+
+def index(request):
+    '''The hame page for pizzeria'''
+    return render(request, 'pizza_place/index.html')
